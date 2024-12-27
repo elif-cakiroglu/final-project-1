@@ -1,0 +1,6 @@
+Package: 1st
+Version: 1.0
+Architecture: all
+Maintainer: Elif <elif.cakirogluuu@gmail.com>
+Description: This is the Homework App as a Debian package.
+Depends: python3, python3-flask, python3-pandas, systemd
