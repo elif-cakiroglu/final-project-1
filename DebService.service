@@ -1,0 +1,16 @@
+[Unit]
+Description=DebService Python Application
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/1st/DebService.py
+WorkingDirectory=/opt/1st
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=elif
+Group=elif
+
+[Install]
+WantedBy=multi-user.target
+
