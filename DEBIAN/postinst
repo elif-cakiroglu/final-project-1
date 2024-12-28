@@ -1,0 +1,9 @@
+#!/bin/bash
+# Kurulum sonrası betik, servisi başlatır
+
+# Servisi başlangıçta çalışacak şekilde etkinleştir
+systemctl enable DebService.service
+
+# Servisi hemen başlat
+systemctl start DebService.service
+

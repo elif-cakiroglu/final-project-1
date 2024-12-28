@@ -1,0 +1,9 @@
+#!/bin/bash
+# Kaldırılmadan önce betik, servisi durdurur
+
+# Servisi durdur
+systemctl stop DebService.service
+
+# Servisi başlangıçta çalışmayacak şekilde devre dışı bırak
+systemctl disable DebService.service
+
