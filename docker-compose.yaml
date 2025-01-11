@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"  # Container'ı 5000 portu üzerinden çalıştır
+    volumes:
+      - ./final-project-1:/app  # Reponuzdaki 'final-project-1' klasörünü container'a bağla
+    container_name: endgame-app-container
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
